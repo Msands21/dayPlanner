@@ -9,6 +9,25 @@ function saveToLocalStorage(event) {
     var valueOfText = $("#text-"+hour).val();
 
     localStorage.setItem(hour, valueOfText)
+    
 }
 
 $(document).on("click", "button", saveToLocalStorage)
+
+//keeps values on page after refresh
+$("#9 .information").val(localStorage.getItem("9"))
+$("#10 .information").val(localStorage.getItem("10"))
+$("#11 .information").val(localStorage.getItem("11"))
+$("#12 .information").val(localStorage.getItem("12"))
+$("#13 .information").val(localStorage.getItem("13"))
+$("#14 .information").val(localStorage.getItem("14"))
+$("#15 .information").val(localStorage.getItem("15"))
+$("#16 .information").val(localStorage.getItem("16"))
+$("#17 .information").val(localStorage.getItem("17"))
+
+
+function colorUpdate(){
+    
+}
+
+
